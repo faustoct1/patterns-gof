@@ -24,8 +24,7 @@ class Delegador {
 }
 
 const test = async () => {
-  const delegador = new Delegador()
-  console.log(`${delegador.hello()} ${delegador.world()}`)
+
 }
 
 (async ()=>{ test() })()
