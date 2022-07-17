@@ -11,7 +11,6 @@ class Cadeia {
 }
 
 const test = async () => {
-  new Cadeia(' ',)
   const instance = new Cadeia(new Cadeia(new Cadeia(null,'World'),' '),'Hello')
   console.log(instance.handle())
 }
