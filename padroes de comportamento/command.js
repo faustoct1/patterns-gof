@@ -2,6 +2,11 @@ class Commando {
   executa = () => "Hello World"
 }
 
+class CommandoSemEspaco {
+  executa = () => "HelloWorld"
+}
+
+
 class Executor {
   obj = null
   constructor(obj){
@@ -11,8 +16,8 @@ class Executor {
 }
 
 const test = async () => {
-  const executor = new Executor(new Commando())
-  console.log(executor.executa())
+  console.log((new Executor(new Commando())).executa())
+  console.log((new Executor(new CommandoSemEspaco())).executa())
 }
 
 (async ()=>{ test() })()
