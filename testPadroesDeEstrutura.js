@@ -34,10 +34,6 @@ const testPadroesDeCriacao = async () => {
   await facade()
   console.log()
 
-  console.log('Facade')
-  await facade()
-  console.log()
-
   console.log('Flyweight')
   await flyweight()
   console.log()
