@@ -8,6 +8,8 @@ cd patterns-gof
 node index
 ````
 
+Teste cada padrão isoladamente descomentando `(async = () => { test() })()` no final de cada funcão e chame isoladamente por exemplo `node padroes-de-criacao/factory.js`
+
 # O que é abordado ?
 Exemplos de todos os 24 padrões de projeto com Hello World para fácil entendido.
 
