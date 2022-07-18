@@ -10,7 +10,7 @@ class Singleton {
   getStr = () => this.str
 }
 
-const test = async () => {
+const test = exports.test = async () => {
   const instance = Singleton.getInstance()
   console.log(instance.getStr())
 }

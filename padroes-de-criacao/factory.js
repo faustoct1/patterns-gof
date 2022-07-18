@@ -17,7 +17,7 @@ class Factory2 extends Factory {
 }
 
 
-const test = async () => {
+const test = exports.test = async () => {
   const f1 = new Factory1()
   const f2 = new Factory2()
   console.log(f1.factory())

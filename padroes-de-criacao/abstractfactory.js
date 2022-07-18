@@ -69,7 +69,7 @@ class HelloWorldB2 extends AbstractHelloWorldB {
   }
 }
 
-const test = async () => {
+const test = exports.test = async () => {
   const factory1 = new Factory1()
   const factory2 = new Factory2()
   factory1.createHelloWorldA().print()
@@ -79,4 +79,4 @@ const test = async () => {
 
 }
 
-(async ()=>{ test() })()
+//(async ()=>{ test() })()

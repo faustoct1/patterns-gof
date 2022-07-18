@@ -13,7 +13,7 @@ class Builder {
 }
 
 
-const test = async () => {
+const test = exports.test = async () => {
   const builder = new Builder()
   builder.buildHello()
   builder.buildSpace()
@@ -22,4 +22,4 @@ const test = async () => {
   console.log(obj)
 }
 
-(async ()=>{ test() })()
+//(async ()=>{ test() })()

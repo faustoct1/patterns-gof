@@ -28,11 +28,11 @@ class HelloWorld2 extends Prototype {
 }
 
 
-const test = async () => {
+const test = exports.test = async () => {
   const hw1 = new HelloWorld1('Hello World1')
   const hw2 = new HelloWorld2('Hello World2')
   console.log(hw1.get(),hw1===hw1,hw1===hw1.clone())
   console.log(hw2.get(),hw2===hw2,hw2===hw2.clone())
 }
 
-(async ()=>{ test() })()
+//(async ()=>{ test() })()
