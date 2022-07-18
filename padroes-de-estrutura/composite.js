@@ -20,9 +20,9 @@ class World extends Palavra {
   }
 }
 
-const test = async () => {
+const test = exports.test = async () => {
   const helloworld = new Hello(new World())
   helloworld.print()
 }
 
-(async ()=>{ test() })()
+//(async ()=>{ test() })()

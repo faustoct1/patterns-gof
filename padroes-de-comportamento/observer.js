@@ -25,7 +25,7 @@ class HelloWorld {
   }
 }
 
-const test = async () => {
+const test = exports.test = async () => {
   const hw = new HelloWorld()
   const o = new Observador()
   hw.addObservador(o)
@@ -33,4 +33,4 @@ const test = async () => {
   console.log(o.getStr())
 }
 
-(async ()=>{ test() })()
+//(async ()=>{ test() })()

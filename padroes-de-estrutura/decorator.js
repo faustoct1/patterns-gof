@@ -36,9 +36,9 @@ class BarraN extends Palavra {
   getStr = () => { return `${this.str} ${this.palavra ? this.palavra.getStr():''}` }
 }
 
-const test = async () => {
+const test = exports.test = async () => {
   const helloworld = new BarraN(new Hello(new World(new BarraN())))
   console.log(helloworld.getStr())
 }
 
-(async ()=>{ test() })()
+//(async ()=>{ test() })()

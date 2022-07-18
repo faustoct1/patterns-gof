@@ -1,9 +1,11 @@
-const { default: abstractfactory } = require('./padroes-de-criacao/abstractfactory')
-const { default: builder } = require('./padroes-de-criacao/builder')
-const { default: factory } = require('./padroes-de-criacao/factory')
+const { testPadroesDeCriacao } = require('./testPadroesDeCriacao')
+const { testPadroesDeEstrutura } = require('./testPadroesDeEstrutura')
+const { testPadroesDeComportamento } = require('./testPadroesDeComportamento')
 
 const test = async () => {
-  console.log(await abstractfactory())
+  await testPadroesDeCriacao()
+  await testPadroesDeEstrutura()
+  await testPadroesDeComportamento()
 }
 
 (async = () => {

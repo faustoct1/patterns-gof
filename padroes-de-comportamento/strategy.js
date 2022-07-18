@@ -21,7 +21,7 @@ class Log {
   executa = () => console.log(this.estrategia.getStr())
 }
 
-const test = async () => {
+const test = exports.test = async () => {
   const log = new Log()
   
   log.setEstrategia(new HelloWorld())
@@ -31,4 +31,4 @@ const test = async () => {
   log.executa()
 }
 
-(async ()=>{ test() })()
+//(async ()=>{ test() })()

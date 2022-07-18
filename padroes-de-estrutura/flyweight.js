@@ -15,7 +15,7 @@ class FlyweightFactory {
   }
 }
 
-const test = async () => {
+const test = exports.test = async () => {
   const instance = new FlyweightFactory()
 
   const promise1 = await Promise.all([
@@ -33,4 +33,4 @@ const test = async () => {
   console.log(`${promise2[0]}${promise2[1]}${promise2[2]}`)
 }
 
-(async ()=>{ test() })()
+//(async ()=>{ test() })()

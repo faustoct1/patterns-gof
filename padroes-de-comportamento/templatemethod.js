@@ -13,10 +13,10 @@ class HelloWorldMaiusculo extends MetodoTemplate {
   getStr = () => super.getStr().toUpperCase()
 }
 
-const test = async () => {
+const test = exports.test = async () => {
   console.log((new HelloWorld()).getStr())
   console.log((new HelloWorldMinusculo()).getStr())
   console.log((new HelloWorldMaiusculo()).getStr())
 }
 
-(async ()=>{ test() })()
+//(async ()=>{ test() })()

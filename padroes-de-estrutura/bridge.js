@@ -22,11 +22,11 @@ class Audio {
   faz = () => { console.log("Falei: Hello World") }
 };
 
-const test = async () => {
+const test = exports.test = async () => {
   const teclado = new Teclado(new Tela())
   const conversa = new Conversa(new Audio())
   teclado.escreve()
   conversa.fala()
 }
 
-(async ()=>{ test() })()
+//(async ()=>{ test() })()

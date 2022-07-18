@@ -18,9 +18,9 @@ class GetHelloWorld extends HelloWorldAdaptador {
   }
 }
 
-const test = async () => {
+const test = exports.test = async () => {
   const instance = new GetHelloWorld()
   console.log(instance.getStr())
 }
 
-(async ()=>{ test() })()
+//(async ()=>{ test() })()

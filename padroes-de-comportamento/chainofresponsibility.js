@@ -10,9 +10,9 @@ class Cadeia {
   }
 }
 
-const test = async () => {
+const test = exports.test = async () => {
   const instance = new Cadeia(new Cadeia(new Cadeia(null,'World'),' '),'Hello')
   console.log(instance.handle())
 }
 
-(async ()=>{ test() })()
+//(async ()=>{ test() })()

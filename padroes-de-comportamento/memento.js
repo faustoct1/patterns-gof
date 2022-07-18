@@ -6,7 +6,7 @@ class Memento {
   getStr = (index) => this.str[index] ? this.str[index] : ''
 }
 
-const test = async () => {
+const test = exports.test = async () => {
   const memento = new Memento('Hello World')
   let str = ''
   let char = null
@@ -18,4 +18,4 @@ const test = async () => {
   console.log(str)
 }
 
-(async ()=>{ test() })()
+//(async ()=>{ test() })()

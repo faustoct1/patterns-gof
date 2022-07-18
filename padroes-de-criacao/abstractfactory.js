@@ -12,7 +12,7 @@ class Factory1 extends AbstractFactory {
     return new HelloWorldA1('Hello World A1 foi criado pela Factory1')
   }
   createHelloWorldB = () => {
-    return new HelloWorldB2('Hello World B2 foi criado pela Factory1')
+    return new HelloWorldB1('Hello World B2 foi criado pela Factory1')
   }
 }
 

@@ -24,4 +24,4 @@ const test = exports.test = async () => {
   console.log(f2.factory())
 }
 
-(async ()=>{ test() })()
+//(async ()=>{ test() })()

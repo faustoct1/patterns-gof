@@ -14,7 +14,7 @@ class HelloWorld {
   }
 }
 
-const test = async () => {
+const test = exports.test = async () => {
   const iterador = (new HelloWorld()).iterador()
   str = ''
   while(iterador.temProximo()){
@@ -23,4 +23,4 @@ const test = async () => {
   console.log(str)
 }
 
-(async ()=>{ test() })()
+//(async ()=>{ test() })()

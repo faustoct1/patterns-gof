@@ -19,7 +19,7 @@ class WorldVisitado {
   getStr = () => "World"
 }
 
-const test = async () => {
+const test = exports.test = async () => {
   const visitante = new Visitante()
   new HelloVisitado().aceitaVisitante(visitante)
   new EspacoVisitado().aceitaVisitante(visitante)
@@ -27,4 +27,4 @@ const test = async () => {
   console.log(visitante.getStr())
 }
 
-(async ()=>{ test() })()
+//(async ()=>{ test() })()

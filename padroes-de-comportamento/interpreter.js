@@ -26,9 +26,9 @@ class InterpretaComEspacoETudoMaiusculo extends Interpretador {
   }
 }
 
-const test = async () => {
+const test = exports.test = async () => {
   console.log((new InterpretaComEspaco()).interpreta(new HelloWorld()))
   console.log((new InterpretaComEspacoETudoMaiusculo()).interpreta(new HelloWorld()))
 }
 
-(async ()=>{ test() })()
+//(async ()=>{ test() })()

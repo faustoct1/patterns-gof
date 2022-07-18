@@ -24,10 +24,10 @@ class World extends Espaco {
   }
 }
 
-const test = async () => {
+const test = exports.test = async () => {
   const hw = new World()
   hw.manipularEstado()
   console.log(hw.getStr())
 }
 
-(async ()=>{ test() })()
+//(async ()=>{ test() })()

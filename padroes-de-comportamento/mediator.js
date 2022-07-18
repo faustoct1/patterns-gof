@@ -13,9 +13,9 @@ class MediadorWorld extends Mediador{
 }
 
 
-const test = async () => {
+const test = exports.test = async () => {
   console.log((new MediadorHello()).getStr())
   console.log((new MediadorWorld()).getStr())
 }
 
-(async ()=>{ test() })()
+//(async ()=>{ test() })()

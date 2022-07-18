@@ -14,9 +14,9 @@ class Executor {
   executa = () => this.obj.executa()
 }
 
-const test = async () => {
+const test = exports.test = async () => {
   console.log((new Executor(new Commando())).executa())
   console.log((new Executor(new CommandoSemEspaco())).executa())
 }
 
-(async ()=>{ test() })()
+//(async ()=>{ test() })()

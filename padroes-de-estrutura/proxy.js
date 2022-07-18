@@ -15,7 +15,7 @@ const proxy = (p) => {
   console.log(p.getStr())
 }
 
-const test = async () => {
+const test = exports.test = async () => {
   proxy(new HelloWorld())
   try{
     proxy(new NaoHelloWorld())
@@ -25,4 +25,4 @@ const test = async () => {
   proxy(new NaoHelloWorldProxy())
 }
 
-(async ()=>{ test() })()
+//(async ()=>{ test() })()
