@@ -6,7 +6,6 @@ class CommandoSemEspaco {
   executa = () => "HelloWorld"
 }
 
-
 class Executor {
   obj = null
   constructor(obj){
