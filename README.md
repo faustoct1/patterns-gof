@@ -14,7 +14,7 @@ Teste cada padrão isoladamente descomentando `(async = () => { test() })()` no 
 Exemplos de todos os 24 padrões de projeto com Hello World para fácil entendido.
 
 - Padrões de criação
-  - Abstract Factory()
+  - Abstract Factory
   - Builder
   - Factory
   - Prototype
