@@ -13,14 +13,14 @@ Teste cada padrão isoladamente descomentando `(async = () => { test() })()` no 
 # O que é abordado ?
 Exemplos de todos os 24 padrões de projeto com Hello World para fácil entendido.
 
-- Padrões de criação
+- **Padrões de criação**
   - Abstract Factory
   - Builder
   - Factory
   - Prototype
   - Singleton
 
-- Padrões de estrutura
+- **Padrões de estrutura**
   - Adapter
   - Bridge
   - Composite
@@ -30,7 +30,7 @@ Exemplos de todos os 24 padrões de projeto com Hello World para fácil entendid
   - Flyweight')
   - Proxy
 
-- Padrões de compoartamento
+- **Padrões de compoartamento**
   - Chain of Responsability
   - Command
   - Interpreter
